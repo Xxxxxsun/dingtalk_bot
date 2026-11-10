@@ -1,0 +1,66 @@
+[
+  {
+    "name": "weekly-ai4fm-monday",
+    "description": "周一：AI for Formal Methods / LLM 辅助规约与验证",
+    "onCalendar": "Mon *-*-* 11:40:00",
+    "module": "myclaw.weekly",
+    "args": ["--preset", "monday-ai4fm"],
+    "timeoutSeconds": 2400
+  },
+  {
+    "name": "weekly-probabilistic-tuesday",
+    "description": "周二：Probabilistic Programs / Quantitative Verification",
+    "onCalendar": "Tue *-*-* 11:40:00",
+    "module": "myclaw.weekly",
+    "args": ["--preset", "tuesday-probabilistic"],
+    "timeoutSeconds": 2400
+  },
+  {
+    "name": "weekly-cps-wednesday",
+    "description": "周三：Hybrid & Cyber-Physical Systems / Barrier Certificates / Safe Control",
+    "onCalendar": "Wed *-*-* 11:40:00",
+    "module": "myclaw.weekly",
+    "args": ["--preset", "wednesday-cps"],
+    "timeoutSeconds": 2400
+  },
+  {
+    "name": "weekly-quantum-thursday",
+    "description": "周四：Quantum Programs & Systems",
+    "onCalendar": "Thu *-*-* 11:40:00",
+    "module": "myclaw.weekly",
+    "args": ["--preset", "thursday-quantum"],
+    "timeoutSeconds": 2400
+  },
+  {
+    "name": "weekly-pl-semantics-friday",
+    "description": "周五：Programming Languages / Mechanized Semantics / Program Logic",
+    "onCalendar": "Fri *-*-* 11:40:00",
+    "module": "myclaw.weekly",
+    "args": ["--preset", "friday-pl-semantics"],
+    "timeoutSeconds": 2400
+  },
+  {
+    "name": "weekly-reasoning-synthesis-saturday",
+    "description": "周六：Automated Reasoning & Synthesis / SMT, CHC, Model Checking",
+    "onCalendar": "Sat *-*-* 11:40:00",
+    "module": "myclaw.weekly",
+    "args": ["--preset", "saturday-reasoning-synthesis"],
+    "timeoutSeconds": 2400
+  },
+  {
+    "name": "ai-daily",
+    "description": "每天：Juya AI Daily 中文新闻概览",
+    "onCalendar": "*-*-* 14:00:00",
+    "module": "myclaw.ai_daily",
+    "args": [],
+    "timeoutSeconds": 240
+  },
+  {
+    "name": "hf-daily-top10",
+    "description": "每天：Hugging Face Daily Papers Top 10 中文摘要",
+    "onCalendar": "*-*-* 14:05:00",
+    "module": "myclaw.hf_daily",
+    "args": [],
+    "timeoutSeconds": 720
+  }
+]

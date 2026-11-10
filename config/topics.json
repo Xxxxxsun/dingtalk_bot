@@ -1,0 +1,154 @@
+{
+  "group_profile": "浙江大学形式化验证组（陈明帅老师课题组）。研究方向：形式化验证与综合；程序语言理论；概率/量子系统；混成（离散-连续）与信息物理系统；AI for Formal Methods。代表工作包括概率程序终止性与定量分析（OOPSLA'23/'24、CAV'25）、障碍证书与混成系统可达性、大规模程序规约合成（OOPSLA'26 A Tale of 1001 LoC、Preguss）、抽象解释参数调优（Parf, ASE'24）、Linux eBPF ISA 机械化语义（OOPSLA'26）、量子程序验证（MorphQPV, ASPLOS'24）。",
+  "presets": {
+    "monday-ai4fm": {
+      "topic": "AI for Formal Methods / LLM-aided Specification & Verification",
+      "keywords": [
+        "LLM specification synthesis",
+        "loop invariant generation LLM",
+        "LLM program verification",
+        "autoformalization",
+        "neural theorem proving",
+        "Lean / Coq / Isabelle LLM",
+        "verified code generation",
+        "LLM static analysis",
+        "Dafny / Verus / Frama-C LLM"
+      ],
+      "overview_dimensions": [
+        "规约与不变式合成",
+        "LLM + 演绎验证（Dafny/Verus/Frama-C/ACSL）",
+        "神经定理证明与自动形式化",
+        "可验证代码生成",
+        "LLM 辅助静态分析与抽象解释",
+        "评测基准与可信性",
+        "组内重点关注"
+      ],
+      "focus": "重点关注大模型与形式化方法结合的工作：规约/循环不变式/契约合成、LLM 引导的演绎验证与证明修复、Lean/Coq/Isabelle 神经定理证明与自动形式化、端到端可验证代码生成、LLM 辅助静态分析与误报消减。优先选择以形式化工具作为可靠判定器（soundness 由验证器保证）的方法，以及在真实大规模程序或公开基准上有完整实验的工作；排除只做提示工程、缺少形式化保证或可复现实验的工作。",
+      "group_connections": "大规模程序规约合成（Preguss / A Tale of 1001 LoC）、抽象解释调优（Parf）、LLM 推理与自我改进、AI for Formal Methods 和组内研究方向"
+    },
+    "tuesday-probabilistic": {
+      "topic": "Probabilistic Programs / Quantitative Verification",
+      "keywords": [
+        "probabilistic program verification",
+        "almost-sure termination",
+        "expected runtime",
+        "weakest preexpectation",
+        "quantitative invariant",
+        "ranking supermartingale",
+        "probabilistic model checking",
+        "Bayesian inference probabilistic programs",
+        "Markov decision process verification"
+      ],
+      "overview_dimensions": [
+        "终止性（AST / PAST）",
+        "期望运行时间与定量不变式",
+        "Weakest Preexpectation 与程序逻辑",
+        "鞅方法（Supermartingale）",
+        "概率模型检验（MDP / Markov Chain）",
+        "精确/近似贝叶斯推断",
+        "组内重点关注"
+      ],
+      "focus": "重点关注概率程序的终止性、期望运行时间与上下界、weakest preexpectation 演算、定量/概率不变式自动合成、鞅类证书、概率模型检验与 MDP 分析，以及概率程序的精确或可证明误差界的推断方法。理论结果（可靠性、完备性、可判定性、复杂度）与自动化工具同等重要；优先选择给出可机械检查证书或公开工具与基准的工作。",
+      "group_connections": "概率程序下界（OOPSLA'23）、生成函数精确推断（OOPSLA'24）、概率计数器程序几乎必然终止（CAV'25）、随机系统不动点推理、定量分析统一框架和组内研究方向"
+    },
+    "wednesday-cps": {
+      "topic": "Hybrid & Cyber-Physical Systems / Barrier Certificates / Safe Control",
+      "keywords": [
+        "barrier certificate",
+        "hybrid systems verification",
+        "reachability analysis",
+        "stochastic barrier certificate",
+        "neural network controller verification",
+        "safe control synthesis",
+        "time-delay systems",
+        "hybrid automata learning",
+        "differential dynamic logic"
+      ],
+      "overview_dimensions": [
+        "障碍证书（确定性 / 随机 / 神经）",
+        "可达性分析",
+        "控制器综合与安全强化学习",
+        "神经网络控制系统验证",
+        "混成系统建模与推断",
+        "时滞与随机动力系统",
+        "组内重点关注"
+      ],
+      "focus": "重点关注混成系统与信息物理系统的形式化验证与综合：障碍证书与归纳不变式的合成（SOS/SDP、LP、SMT、神经网络证书及其形式化校验）、连续/混成可达性分析、随机系统安全性、神经网络控制系统闭环验证、安全控制器综合，以及从轨迹数据推断混成自动机模型。优先选择具有可靠性保证或可验证证书、并在标准基准（如 ARCH-COMP）上比较的工作。",
+      "group_connections": "不变式编码为障碍证书、随机系统容错障碍证书（TCAD'26）、可解动力系统可达性、时滞系统验证与综合、非线性混成系统推断（HSCC'26）和组内研究方向"
+    },
+    "thursday-quantum": {
+      "topic": "Quantum Programs & Systems / Quantum Verification and Compilation",
+      "keywords": [
+        "quantum program verification",
+        "quantum Hoare logic",
+        "quantum circuit synthesis",
+        "quantum circuit equivalence checking",
+        "quantum compilation optimization",
+        "quantum error correction decoding",
+        "distributed quantum computing",
+        "quantum program testing"
+      ],
+      "overview_dimensions": [
+        "量子程序逻辑与验证",
+        "量子电路等价性检查",
+        "量子电路综合与编译优化",
+        "量子纠错与解码",
+        "分布式 / 模块化量子计算",
+        "量子程序测试与调试",
+        "组内重点关注"
+      ],
+      "focus": "重点关注量子程序与量子系统的形式化推理与工程方法：量子 Hoare 逻辑与程序验证、电路等价性检查、幺正矩阵到电路的综合与编译优化、量子纠错解码算法与硬件加速、分布式量子计算的性能分析，以及量子程序的测试与断言检查。优先选择有形式化正确性保证、或在真实量子硬件/标准基准上有充分实验的工作。",
+      "group_connections": "量子程序验证（MorphQPV, ASPLOS'24）、快速幺正综合（Fast-USYN）、自适应分布式量子计算（AdaptDQC）、量子 LDPC 解码（Vegapunk, MICRO'25）和组内研究方向"
+    },
+    "friday-pl-semantics": {
+      "topic": "Programming Languages / Mechanized Semantics / Program Logic & Termination",
+      "keywords": [
+        "mechanized semantics",
+        "interactive theorem proving",
+        "Coq / Rocq / Isabelle / Lean formalization",
+        "program equivalence",
+        "termination analysis",
+        "abstract interpretation",
+        "separation logic",
+        "eBPF verification",
+        "invariant synthesis polynomial programs"
+      ],
+      "overview_dimensions": [
+        "机械化语义与 ISA 形式化",
+        "程序逻辑（分离逻辑 / 关系逻辑）",
+        "终止性与不变式合成",
+        "抽象解释与静态分析",
+        "程序等价与引理合成",
+        "系统软件验证（内核 / eBPF / 安全启动）",
+        "组内重点关注"
+      ],
+      "focus": "重点关注程序语言理论与系统验证：基于 Coq/Rocq/Isabelle/Lean 的机械化语义与系统软件验证（如 eBPF、OS 内核、安全协议）、分离逻辑等程序逻辑、多项式/非线性程序的终止性与不变式合成、抽象解释与静态分析的精度/效率提升、程序等价证明与引理合成。优先选择 POPL/PLDI/OOPSLA/ICFP/CAV/TACAS 等顶会、有机械化证明或公开工具与 artifact 的工作。",
+      "group_connections": "Linux eBPF ISA 机械化语义（OOPSLA'26 / eBPF'26）、多项式程序终止性（Inf. Comput.）、抽象解释（Parf）、函数式程序等价（FM'24）、形式化验证安全启动（PA-Boot）和组内研究方向"
+    },
+    "saturday-reasoning-synthesis": {
+      "topic": "Automated Reasoning & Synthesis / SMT, CHC, Model Checking and Program Synthesis",
+      "keywords": [
+        "SMT solving",
+        "constrained Horn clauses (CHC) solving",
+        "SAT / MaxSAT",
+        "IC3 / PDR model checking",
+        "syntax-guided synthesis (SyGuS)",
+        "reactive synthesis",
+        "program synthesis",
+        "nonlinear real arithmetic / quantifier elimination",
+        "proof certificates / proof-producing solvers"
+      ],
+      "overview_dimensions": [
+        "SMT / SAT 求解算法与工具",
+        "CHC 求解与不变式推断",
+        "符号模型检验（IC3/PDR、k-induction）",
+        "程序综合与 SyGuS",
+        "反应式综合与博弈求解",
+        "非线性实数算术与量词消去",
+        "组内重点关注"
+      ],
+      "focus": "重点关注支撑形式化验证与综合的自动推理技术：SMT/SAT/MaxSAT 求解算法与工具改进、CHC 求解与基于 Horn 子句的不变式推断、IC3/PDR 与 k-induction 等符号模型检验、语法引导综合（SyGuS）与程序综合、反应式综合与博弈求解、非线性实数算术与量词消去，以及能输出可独立检查证明的求解器。优先选择 CAV/TACAS/FMCAD/SAT/IJCAR/PLDI/POPL 等会议、在 SMT-COMP/CHC-COMP/SYNTCOMP 等标准基准上有对比，或公开工具与 artifact 的工作；排除仅调用现成求解器、对推断技术本身无贡献的应用论文。",
+      "group_connections": "障碍证书与归纳不变式的 SMT/SOS 求解、规约合成中的 CHC 编码（Preguss / A Tale of 1001 LoC）、概率程序证书合成（OOPSLA'23/'24、CAV'25）、多项式程序不变式与终止性、抽象解释调优（Parf）和组内研究方向"
+    }
+  }
+}
